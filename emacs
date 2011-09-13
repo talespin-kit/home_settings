@@ -37,6 +37,7 @@
   ;; If there is more than one, they won't work right.
  '(menu-bar-mode t)
  '(org-completion-use-ido t)
+ '(org-timer-default-timer 25)
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -50,3 +51,8 @@
 (global-set-key (kbd "<f5>")
 		(lambda () (interactive)
 		  (find-file (concat (getenv "HOME") "/org/home.org"))))
+
+;; <f4> opens the office.org file
+(global-set-key (kbd "<f4>")
+		(lambda () (interactive)
+		  (find-file (concat (getenv "HOME") "/org/office.org"))))
